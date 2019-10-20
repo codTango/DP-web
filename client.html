@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="D&P Website">
+  <meta name="author" content="Connor Tang">
+
+  <title>D&P</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles -->
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <span id="resuable-header"></span>
+
+  <!-- Contact -->
+  <section class="bg-light page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="font-test section-heading text-uppercase">Say Hello</h2>
+          <h3 class="section-subheading text-muted"><span class="underline">联系我们</span></h3>
+        </div>
+      </div>
+      <div class="row contact-box">
+        <div class="contact-background"></div>
+        <div class="col-lg-6 contact-form">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col">
+                <div class="col-sm-4 contact-section-heading text-uppercase">
+                    <div class="contact-heading-1">Free</div>
+                    <div class="contact-heading-2">Designing</div>
+                    <div class="contact-heading-line"></div>
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Tell" required="required" data-validation-required-message="Please enter your email address.">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="E-mail" required="required" data-validation-required-message="Please enter your phone number.">
+                </div>
+                <div class="form-group">
+                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Consultatio</button>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- View More Btn -->
+      <div class="col-lg-12 text-center view-more">
+        <div id="success"></div>
+        <button id="viewMore" class="btn btn-primary btn-xl text-uppercase" type="submit">View More</button>
+      </div>
+    </div>
+  </section>
+
+  <span id="resuable-footer"></span>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <!-- <script src="js/contact_me.js"></script> -->
+
+  <!-- Custom scripts -->
+  <script src="js/dp-web.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#resuable-header').load('./resuable-header.html', function() {
+        $('.intro-text').html('<div id="intro-heading-1" class="intro-heading text-uppercase">Our Client<div class="second-line"><span class="underline">我们的客户</span></div></div>');
+      });
+      $('#resuable-footer').load('./resuable-footer.html');
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="D&P Website">
+  <meta name="author" content="Connor Tang">
+
+  <title>D&P</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles -->
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <style>
+    .contact-form {
+      text-align: center;
+      margin-top: 50px;
+      background-color: transparent !important;
+    }
+    .input-field {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+  <span id="resuable-header"></span>
+
+  <!-- Contact -->
+  <section class="bg-light page-section" id="contact">
+    <div class="container">
+      <div style="height: 800px;">
+        <div style="position: absolute;top: 450px;left: 200px;" class="row">
+          <div class="text-uppercase text-left">
+            <span class="underline">Our </span>History
+            <p>Designed for educators at any level to develop TestBanks of questions from which randomly selected questions are then extracted to create tests. Each TestBank acts as a repository to house a wide range of questions for a specific topic.</p>
+          </div>
+          <img class="img-right" src="img/contact.jpg" />
+        </div>
+
+        <div style="position: absolute;top: 890px;left: 200px;" class="row">
+          <div class="text-uppercase text-left" style="margin-left: 650px;">
+            <span class="underline">Our </span>History
+            <p>Designed for educators at any level to develop TestBanks of questions from which randomly selected questions are then extracted to create tests. Each TestBank acts as a repository to house a wide range of questions for a specific topic.</p>
+          </div>
+          <img class="img-right" src="img/contact.jpg" style="left: 100px;" />
+        </div>
+      </div>
+      
+      <form id="contactForm" name="sentMessage" action="#" class="contact-form">
+        <div class="input-field">
+          <input id="name" class="input" name="name" placeholder="Name" type="text" value="" size="50" /><br />
+          <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="input-field">
+          <input id="email" class="input" name="email" placeholder="E-mail" type="text" value="" size="50" /><br />
+          <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="input-field">
+          <input id="email" class="input" name="subject" placeholder="Subject" type="text" value="" size="50" /><br />
+          <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="input-field">
+          <textarea id="message" class="input" name="message" placeholder="Add some words" rows="5" cols="49"></textarea><br />
+          <span id="message_validation" class="error_message"></span>
+        </div>
+          <div id="success"></div>
+          <input id="submit_button" type="submit" value="Send" class="btn btn-primary btn-xl text-uppercase" />
+      </form>
+    </di>
+  </section>
+
+  <span id="resuable-footer"></span>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="js/dp-web.min.js"></script>
+
+  <script>
+    var logoNum = 26;
+    $(document).ready(function() {
+      $('#resuable-header').load('./resuable-header.html', function() {
+        $('.intro-text').html('<div id="intro-heading-1" class="intro-heading text-uppercase">Say Hello<div class="second-line"><span class="underline">联系我们</span></div></div>');
+        $("a.nav-link.js-scroll-trigger:eq(5)").addClass("active");
+      });
+      $('#resuable-footer').load('./resuable-footer.html');
+    });
+  </script>
+
+</body>
+
+</html>

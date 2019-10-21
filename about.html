@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="D&P Website">
+  <meta name="author" content="Connor Tang">
+
+  <title>D&P</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles -->
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <span id="resuable-header"></span>
+
+  <!-- About -->
+  <section class="bg-light page-section" id="about">
+    <div class="container">
+      <hr width="5" size="500" style="height: 1600px;background-color: #bfbfbf;transform: translateY(-50px);">
+      <div style="position: absolute;top: 450px;left: 200px;" class="row">
+        <div class="text-uppercase text-left">
+          <span class="underline">Our </span>History
+          <p>Designed for educators at any level to develop TestBanks of questions from which randomly selected questions are then extracted to create tests. Each TestBank acts as a repository to house a wide range of questions for a specific topic.</p>
+        </div>
+        <img class="img-right" src="img/contact.jpg" />
+      </div>
+
+      <div style="position: absolute;top: 890px;left: 200px;" class="row">
+        <div class="text-uppercase text-left" style="margin-left: 650px;">
+          <span class="underline">Our </span>History
+          <p>Designed for educators at any level to develop TestBanks of questions from which randomly selected questions are then extracted to create tests. Each TestBank acts as a repository to house a wide range of questions for a specific topic.</p>
+        </div>
+        <img class="img-right" src="img/contact.jpg" style="left: 100px;" />
+      </div>
+
+      <div style="position: absolute;top: 1330px;left: 200px;" class="row">
+        <div class="text-uppercase text-left">
+          <span class="underline">Our </span>History
+          <p>Designed for educators at any level to develop TestBanks of questions from which randomly selected questions are then extracted to create tests. Each TestBank acts as a repository to house a wide range of questions for a specific topic.</p>
+        </div>
+        <img class="img-right" src="img/contact.jpg" />
+      </div>
+
+      <div style="position: absolute;top: 1750px;left: 200px;" class="row">
+        <div class="text-uppercase text-left" style="margin-left: 650px;">
+          <span class="underline">Our </span>History
+          <p>Designed for educators at any level to develop TestBanks of questions from which randomly selected questions are then extracted to create tests. Each TestBank acts as a repository to house a wide range of questions for a specific topic.</p>
+        </div>
+        <img class="img-right" src="img/contact.jpg" style="left: 100px;" />
+      </div>
+    </div>
+  </section>
+
+  <span id="resuable-footer"></span>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="js/dp-web.min.js"></script>
+
+  <script>
+    var logoNum = 26;
+    $(document).ready(function() {
+      $('#resuable-header').load('./resuable-header.html', function() {
+        $('.intro-text').html('<div id="intro-heading-1" class="intro-heading text-uppercase">About Us<div class="second-line"><span class="underline">关于我们</span></div></div>');
+        $("a.nav-link.js-scroll-trigger:eq(1)").addClass("active");
+      });
+      $('#resuable-footer').load('./resuable-footer.html');
+    });
+  </script>
+
+</body>
+
+</html>
